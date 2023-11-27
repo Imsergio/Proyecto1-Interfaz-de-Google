@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  height: 60px;
+  padding: 0 18px;
+}
+
+header .opciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header .opciones a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgb(15, 15, 15);
+}
+
+header .opciones a img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.dots-logo {
+  display: inline-block;
+  background-image: url(assets/al-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
