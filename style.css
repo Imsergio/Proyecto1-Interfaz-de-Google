@@ -10,7 +10,7 @@ body {
   background-color: #ffffff;
   height: 100vh;
 }
-
+/* header */
 header {
   display: flex;
   justify-content: end;
@@ -25,7 +25,6 @@ header .opciones {
 }
 
 header .opciones a {
-  text-decoration: none;
   font-size: 13px;
   color: rgb(15, 15, 15);
 }
@@ -43,4 +42,74 @@ header .opciones a img {
   background-position: center;
   width: 24px;
   height: 24px;
+}
+
+/* main */
+main {
+  height: calc(100% - 60px - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+}
+.container figure{
+  height: 92px;
+}
+.container figure img {
+  height: 100%;
+}
+.container .searcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 40px;
+  width: 450px;
+  padding: 8px 12px;
+  border: 1px solid gray;
+  border-radius: 24px;
+}
+.searcher span {
+  width: 30px;
+}
+.searcher .text{
+  width: 100%;
+}
+.searcher .area {
+  width: 100%;
+  display: flex;
+  resize: none;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding-top: 10px;
+  color: rgba(0,0,0,.87);
+  word-wrap: break-word;
+  outline: none;
+  line-height: 14px;
+  overflow-x: hidden;
+}
+
+.container .searcher-buttons {
+  display: flex;
+  gap: 10px;
+}
+.container .searcher-buttons button{
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(248 249 250);
+  padding: 12px;
+  color: rgb(19, 19, 19);
+}
+
+.container p {
+  font-size: small;
+  color: rgb(8, 8, 8);
 }
