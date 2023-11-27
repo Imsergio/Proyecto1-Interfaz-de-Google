@@ -163,13 +163,13 @@ section.more-info div a {
 }
 @media (min-width: 920px) {
   section.more-info .sobre-de{
-    flex: 3;
+    flex: 1;
   }
   section.more-info .sobre-de a {
     justify-content: start;
     }
     section.more-info .privacidad{
-      flex: 2;
+      flex: 1;
       justify-content: end;
     }
     section.more-info .privacidad a {
