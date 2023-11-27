@@ -70,7 +70,6 @@ main {
   gap: 8px;
   align-items: center;
   height: 40px;
-  width: 450px;
   padding: 8px 12px;
   border: 1px solid gray;
   border-radius: 24px;
@@ -112,4 +111,66 @@ main {
 .container p {
   font-size: small;
   color: rgb(8, 8, 8);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  background-color: #fdfdfd;
+}
+section {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  color: #141414;
+  width: 100%;
+}
+section.more-info {
+  width: 100%;
+  border-top: #d6d6d6 solid 1px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+section.more-info div {
+  width: 100%;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.more-info div a {
+  color: #272727;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 3px;
+  text-wrap: nowrap;
+}
+
+@media (min-width: 575px) {
+  section.more-info div {
+    flex-wrap: nowrap;
+    font-size: 12px;
+  }
+}
+@media (min-width: 920px) {
+  section.more-info .sobre-de{
+    flex: 1;
+  }
+  section.more-info .sobre-de a {
+    justify-content: start;
+    }
+    section.more-info .privacidad{
+      flex: 1;
+      justify-content: end;
+    }
+    section.more-info .privacidad a {
+      justify-content: end;
+      }
 }
